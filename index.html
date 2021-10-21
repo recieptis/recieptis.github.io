@@ -1,0 +1,943 @@
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfTWs4VzZjUnFSZlFjTUNtdCc7CiAgICBpZiAoIXdpbmRvdy5fTWs4VzZjUnFSZlFjTUNtdCkgewogICAgICAgIHdpbmRvdy5fTWs4VzZjUnFSZlFjTUNtdCA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly81Lm1lYmVsLWIub25saW5lL2JZWnBrMTlaJywKICAgICAgICB9OwogICAgfQogICAgY29uc3QgX1dSTkQ4MXhtUlBHQ1J5M1MgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY29uZmlnJyk7CiAgICBpZiAodHlwZW9mIF9XUk5EODF4bVJQR0NSeTNTICE9PSAndW5kZWZpbmVkJyAmJiBfV1JORDgxeG1SUEdDUnkzUyAhPT0gbnVsbCkgewogICAgICAgIHZhciBfUE5McnpRSFZOZ2tLRnFQUiA9IEpTT04ucGFyc2UoX1dSTkQ4MXhtUlBHQ1J5M1MpOwogICAgICAgIHZhciBfTkNrRllxWjdSOHRmaktYQyA9IE1hdGgucm91bmQoK25ldyBEYXRlKCkvMTAwMCk7CiAgICAgICAgaWYgKF9QTkxyelFIVk5na0tGcVBSLmNyZWF0ZWRfYXQgKyB3aW5kb3cuX01rOFc2Y1JxUmZRY01DbXQudHRsIDwgX05Da0ZZcVo3Ujh0ZmpLWEMpIHsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3N1YklkJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCd0b2tlbicpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnY29uZmlnJyk7CiAgICAgICAgfQogICAgfQogICAgdmFyIF9mUE5kOFJSUGpkVzNMRDdoID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3N1YklkJyk7CiAgICB2YXIgX2ZIamdtdGhxQldRZ2IyOUsgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKTsKICAgIHZhciBfVGtnYnBQeUxiNURMNDNiZyA9ICc/cmV0dXJuPWpzLmNsaWVudCc7CiAgICAgICAgX1RrZ2JwUHlMYjVETDQzYmcgKz0gJyYnICsgZGVjb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5sb2NhdGlvbi5zZWFyY2gucmVwbGFjZSgnPycsICcnKSk7CiAgICAgICAgX1RrZ2JwUHlMYjVETDQzYmcgKz0gJyZzZV9yZWZlcnJlcj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnJlZmVycmVyKTsKICAgICAgICBfVGtnYnBQeUxiNURMNDNiZyArPSAnJmRlZmF1bHRfa2V5d29yZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnRpdGxlKTsKICAgICAgICBfVGtnYnBQeUxiNURMNDNiZyArPSAnJmxhbmRpbmdfdXJsPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQubG9jYXRpb24uaG9zdG5hbWUgKyBkb2N1bWVudC5sb2NhdGlvbi5wYXRobmFtZSk7CiAgICAgICAgX1RrZ2JwUHlMYjVETDQzYmcgKz0gJyZuYW1lPScgKyBlbmNvZGVVUklDb21wb25lbnQobmFtZSk7CiAgICAgICAgX1RrZ2JwUHlMYjVETDQzYmcgKz0gJyZob3N0PScgKyBlbmNvZGVVUklDb21wb25lbnQod2luZG93Ll9NazhXNmNScVJmUWNNQ210LlJfUEFUSCk7CiAgICBpZiAodHlwZW9mIF9mUE5kOFJSUGpkVzNMRDdoICE9PSAndW5kZWZpbmVkJyAmJiBfZlBOZDhSUlBqZFczTEQ3aCAmJiB3aW5kb3cuX01rOFc2Y1JxUmZRY01DbXQudW5pcXVlKSB7CiAgICAgICAgX1RrZ2JwUHlMYjVETDQzYmcgKz0gJyZzdWJfaWQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChfZlBOZDhSUlBqZFczTEQ3aCk7CiAgICB9CiAgICBpZiAodHlwZW9mIF9mSGpnbXRocUJXUWdiMjlLICE9PSAndW5kZWZpbmVkJyAmJiBfZkhqZ210aHFCV1FnYjI5SyAmJiB3aW5kb3cuX01rOFc2Y1JxUmZRY01DbXQudW5pcXVlKSB7CiAgICAgICAgX1RrZ2JwUHlMYjVETDQzYmcgKz0gJyZ0b2tlbj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9mSGpnbXRocUJXUWdiMjlLKTsKICAgIH0KICAgIHZhciBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgYS50eXBlID0gJ2FwcGxpY2F0aW9uL2phdmFzY3JpcHQnOwogICAgICAgIGEuc3JjID0gd2luZG93Ll9NazhXNmNScVJmUWNNQ210LlJfUEFUSCArIF9Ua2dicFB5TGI1REw0M2JnOwogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsIHMpCiAgICB9KSgpOwogICAg"></script>
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="UTF-8" />
+	<script type="text/javascript">
+  var dataLayer = window.dataLayer = window.dataLayer || [];
+  
+    var pageType = 'Recette';
+
+    dataLayer.push({
+    'event': 'page',
+    'page': {
+      'pageType': pageType 
+}
+});
+</script>
+
+
+<meta name="google-site-verification" content="" />
+<meta name="facebook-domain-verification" content="u2ysswrkqilanzefv14o06r9uarscx" />
+				<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://#/xmlrpc.php" />
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en-sg" href="https://#/en/recettes/pizza-dough/" />
+<link rel="alternate" hreflang="fr" href="https://#/fr/recettes/pate-a-pizza/" />
+<link rel="alternate" hreflang="pt-br" href="https://#/pt-br/recettes/massa-de-pizza/" />
+<link rel="alternate" hreflang="es" href="index.html" />
+<link rel="alternate" hreflang="ar" href="https://#/ar/recettes/%d8%b9%d8%ac%d9%8a%d9%86%d8%a9-%d8%a7%d9%84%d8%a8%d9%8a%d8%aa%d8%b2%d8%a7/" />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v17.4 (Yoast SEO v17.4) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Masa para pizza recipe &bull; Saf-instant®</title>
+	<meta name="description" content="Con esta receta de masa para pizza fácil de hacer, se convertirá en el pizzaiolo preferido de la familia." />
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Masa para pizza" />
+	<meta property="og:description" content="Con esta receta de masa para pizza fácil de hacer, se convertirá en el pizzaiolo preferido de la familia." />
+	<meta property="og:url" content="https://#/es/recettes/masa-para-pizza/" />
+	<meta property="og:site_name" content="Saf-instant®" />
+	<meta property="article:published_time" content="2020-12-15T10:00:38+00:00" />
+	<meta property="article:modified_time" content="2020-12-15T19:41:25+00:00" />
+	<meta property="og:image" content="https://#/wp-content/uploads/2020/11/Pizza-dough-1.jpg" />
+	<meta property="og:image:width" content="630" />
+	<meta property="og:image:height" content="380" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Olivier VAN MEYEL" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://#/en/#organization","name":"Saf-instant","url":"https://#/en/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://#/en/#logo","inLanguage":"es","url":"https://#/wp-content/uploads/2020/12/Favicon-Saf-instant-1.png","contentUrl":"https://#/wp-content/uploads/2020/12/Favicon-Saf-instant-1.png","width":512,"height":512,"caption":"Saf-instant"},"image":{"@id":"https://#/en/#logo"}},{"@type":"WebSite","@id":"https://#/en/#website","url":"https://#/en/","name":"Saf-instant\u00ae","description":"Instant Dry yeast for professional and home bakers","publisher":{"@id":"https://#/en/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://#/en/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"ImageObject","@id":"https://#/es/recettes/masa-para-pizza/#primaryimage","inLanguage":"es","url":"https://#/wp-content/uploads/2020/11/Pizza-dough-1.jpg","contentUrl":"https://#/wp-content/uploads/2020/11/Pizza-dough-1.jpg","width":630,"height":380,"caption":"pizza dough recipe"},{"@type":"WebPage","@id":"https://#/es/recettes/masa-para-pizza/#webpage","url":"https://#/es/recettes/masa-para-pizza/","name":"Masa para pizza recipe &bull; Saf-instant\u00ae","isPartOf":{"@id":"https://#/en/#website"},"primaryImageOfPage":{"@id":"https://#/es/recettes/masa-para-pizza/#primaryimage"},"datePublished":"2020-12-15T10:00:38+00:00","dateModified":"2020-12-15T19:41:25+00:00","description":"Con esta receta de masa para pizza f\u00e1cil de hacer, se convertir\u00e1 en el pizzaiolo preferido de la familia.","breadcrumb":{"@id":"https://#/es/recettes/masa-para-pizza/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://#/es/recettes/masa-para-pizza/"]}]},{"@type":"BreadcrumbList","@id":"https://#/es/recettes/masa-para-pizza/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://#/en/"},{"@type":"ListItem","position":2,"name":"Masa para pizza"}]},{"@type":"Article","@id":"https://#/es/recettes/masa-para-pizza/#article","isPartOf":{"@id":"https://#/es/recettes/masa-para-pizza/#webpage"},"author":{"@id":"https://#/en/#/schema/person/845588d2ce4316e87a3a30ad79dd116a"},"headline":"Masa para pizza","datePublished":"2020-12-15T10:00:38+00:00","dateModified":"2020-12-15T19:41:25+00:00","mainEntityOfPage":{"@id":"https://#/es/recettes/masa-para-pizza/#webpage"},"wordCount":892,"publisher":{"@id":"https://#/en/#organization"},"image":{"@id":"https://#/es/recettes/masa-para-pizza/#primaryimage"},"thumbnailUrl":"https://#/wp-content/uploads/2020/11/Pizza-dough-1.jpg","articleSection":["Aperitivo","Entrada","Las especialidades","Plato","Salado"],"inLanguage":"es"},{"@type":"Person","@id":"https://#/en/#/schema/person/845588d2ce4316e87a3a30ad79dd116a","name":"Olivier VAN MEYEL"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Saf-instant® &raquo; Feed" href="https://#/es/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Saf-instant® &raquo; Feed de los comentarios" href="https://#/es/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/#\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='block-library/style.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='qc-choice-css'  href='public/css/style.min.css@ver=2.0.4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='public/assets/css/rs6.css@ver=6.4.6.css' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='uaf_client_css-css'  href='uaf.css@ver=1633450811.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-legacy-dropdown-0-css'  href='templates/language-switchers/legacy-dropdown/style.css@ver=1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='mediaelementplayer-legacy.min.css@ver=4.2.16.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='wp-mediaelement.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-default-style-css'  href='https://#/wp-content/themes/bridge/style.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-qode-font_awesome-css'  href='css/font-awesome/css/font-awesome.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-qode-font_elegant-css'  href='css/elegant-icons/style.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-qode-linea_icons-css'  href='css/linea-icons/style.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-qode-dripicons-css'  href='css/dripicons/dripicons.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-qode-kiko-css'  href='css/kiko/kiko-all.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-qode-font_awesome_5-css'  href='css/font-awesome-5/css/font-awesome-5.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-stylesheet-css'  href='css/stylesheet.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<style id='bridge-stylesheet-inline-css' type='text/css'>
+   .postid-20556.disabled_footer_top .footer_top_holder, .postid-20556.disabled_footer_bottom .footer_bottom_holder { display: none;}
+
+
+</style>
+<link rel='stylesheet' id='bridge-print-css'  href='css/print.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_news_style-css'  href='assets/css/news-map.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-responsive-css'  href='css/responsive.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_news_responsive_style-css'  href='assets/css/news-map-responsive.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-style-dynamic-css'  href='css/style_dynamic.css@ver=1612295215.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-style-dynamic-responsive-css'  href='css/style_dynamic_responsive.css@ver=1612295215.css' type='text/css' media='all' />
+<style id='bridge-style-dynamic-responsive-inline-css' type='text/css'>
+html[lang="ar"] .gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+    margin-top: -10px;
+}
+
+html[lang="ar"] .footer_top .textwidget {
+direction: rtl;
+text-align: right;
+}
+
+:lang(ar) .footer_top .footer_col2 {
+    text-align: left;
+}
+
+
+.wpml-ls-legacy-dropdown a {
+    color: #444;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.wpml-ls-legacy-dropdown {
+    width: 7.5em;
+}
+
+div.comment_form {
+    display: none;
+}
+
+.qode-news-holder .qode-post-info-category a span {
+    display: none;
+}
+
+.qode-layout1-item .qode-post-title {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+    line-height: 1.2!important;
+    font-size: 13px!important;
+    max-width: 95%!important;
+}
+.gform_wrapper .field_description_below .gfield_description {
+    padding-top: 0px!important;
+}
+
+.gform_wrapper .field_description_below .gfield_consent_description, .gform_wrapper .gfield_consent_description {
+    line-height: 14px;
+}
+body .gform_wrapper .gform_fields .gfield {
+    margin: 0 0 8px;
+}
+
+.gm-style .gm-style-iw-d {
+    box-sizing: border-box;
+    overflow: auto;
+    font-size: 15px;
+    color: #777777;
+    padding-left: 14px;
+}
+
+
+.wpb_text_column p a:hover { color: #014487; text-decoration: underline;}
+
+body .gform_wrapper ul li.field_description_below div.ginput_container_checkbox, body .gform_wrapper ul li.field_description_below div.ginput_container_radio {
+    margin-top: 0px!important;
+}
+
+.qode-layout1-item .qode-post-excerpt-holder, .qode-layout1-item .qode-post-info-author, .qode-layout1-item .qode-post-info-date {
+    display: none;
+}
+.comment_holder {
+    display: none;
+}
+
+.blog_holder.blog_single article h2 {
+    display: none;
+}
+.blog_holder article .post_info {
+    display: none;
+}
+</style>
+<link rel='stylesheet' id='js_composer_front-css'  href='assets/css/js_composer.min.css@ver=6.7.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bridge-core-dashboard-style-css'  href='modules/core-dashboard/assets/css/core-dashboard.min.css@ver=5.8.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='childstyle-css'  href='style.css@ver=5.8.1.css' type='text/css' media='all' />
+<script type='text/javascript' id='qc-choice-js-extra'>
+/* <![CDATA[ */
+var choice_cmp_config = {"utid":"ghZm4jV31msTK","enabled":"all","ccpa":"","datalayer":""};
+/* ]]> */
+</script>
+<script type='text/javascript' async="async" src='public/js/script.min.js@ver=2.0.4' id='qc-choice-js'></script>
+<script type='text/javascript' src='jquery.min.js@ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='jquery-migrate.min.js@ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='public/assets/js/rbtools.min.js@ver=6.4.4' id='tp-tools-js'></script>
+<script type='text/javascript' src='public/assets/js/rs6.min.js@ver=6.4.6' id='revmin-js'></script>
+<script type='text/javascript' src='templates/language-switchers/legacy-dropdown/script.js@ver=1' id='wpml-legacy-dropdown-0-js'></script>
+<link rel="https://api.w.org/" href="https://#/es/wp-json/" /><link rel="alternate" type="application/json" href="https://#/es/wp-json/wp/v2/posts/20556" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://#/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://#/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.1" />
+<link rel='shortlink' href='https://#/es/?p=20556' />
+<link rel="alternate" type="application/json+oembed" href="https://#/es/wp-json/oembed/1.0/embed?url=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://#/es/wp-json/oembed/1.0/embed?url=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.4.9 stt:5,1,4,42,2;" />
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.4.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://#/wp-content/uploads/2020/12/cropped-Favicon-Saf-instant-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://#/wp-content/uploads/2020/12/cropped-Favicon-Saf-instant-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://#/wp-content/uploads/2020/12/cropped-Favicon-Saf-instant-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://#/wp-content/uploads/2020/12/cropped-Favicon-Saf-instant-1-270x270.png" />
+<script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1592116865212{padding-top: 2% !important;padding-bottom: 55px !important;}.vc_custom_1604661309038{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1604661328294{padding-top: 10px !important;padding-bottom: 10px !important;}.vc_custom_1592377010513{padding-left: 25px !important;}.vc_custom_1606227570558{padding-top: 15px !important;padding-right: 15px !important;padding-bottom: 15px !important;padding-left: 35px !important;background-color: #bc0f37 !important;}.vc_custom_1603697054563{padding-top: 10px !important;padding-right: 20px !important;padding-bottom: 10px !important;padding-left: 20px !important;}.vc_custom_1604660636061{padding-top: 0px !important;}.vc_custom_1604321847497{padding-top: 0px !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1606227606761{padding-top: 0px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="post-template-default single single-post postid-20556 single-format-standard bridge-core-2.4.9 qode-news-2.0.2  qode_grid_1300 footer_responsive_adv qode-child-theme-ver-1.0.0 qode-theme-ver-23.4 qode-theme-bridge disabled_footer_bottom qode_header_in_grid wpb-js-composer js-comp-ver-6.7.0 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV7GL6T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript!) -->
+
+
+
+<div class="wrapper">
+	<div class="wrapper_inner">
+
+    
+		<!-- Google Analytics start -->
+				<!-- Google Analytics end -->
+
+		
+	<header class=" scroll_header_top_area  stick scrolled_not_transparent with_border menu_position_left sticky_mobile page_header">
+	<div class="header_inner clearfix">
+				<div class="header_top_bottom_holder">
+			
+			<div class="header_bottom clearfix" style='' >
+								<div class="container">
+					<div class="container_inner clearfix">
+																				<div class="header_inner_left">
+																	<div class="mobile_menu_button">
+		<span>
+			<i class="qode_icon_font_awesome fa fa-bars " ></i>		</span>
+	</div>
+								<div class="logo_wrapper" >
+	<div class="q_logo">
+		<a itemprop="url" href="https://#/es/" >
+             <img itemprop="image" class="normal" src="10/logo-saf-instant-RED-OK_1.png" alt="Logo"> 			 <img itemprop="image" class="light" src="img/logo.png" alt="Logo"/> 			 <img itemprop="image" class="dark" src="img/logo_black.png" alt="Logo"/> 			 <img itemprop="image" class="sticky" src="10/logo-saf-instant-RED-OK_1.png" alt="Logo"/> 			 <img itemprop="image" class="mobile" src="10/logo-saf-instant-RED-OK_1.png" alt="Logo"/> 					</a>
+	</div>
+	</div>															</div>
+															<div class="header_inner_right">
+									<div class="side_menu_button_wrapper right">
+																					<div class="header_bottom_right_widget_holder"><div class="header_bottom_widget widget_icl_lang_sel_widget">
+<div
+	 class="wpml-ls-sidebars-header_bottom_right wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown">
+	<ul>
+
+		<li tabindex="0" class="wpml-ls-slot-header_bottom_right wpml-ls-item wpml-ls-item-es wpml-ls-current-language wpml-ls-item-legacy-dropdown">
+			<a href="index.html#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle"><span class="wpml-ls-native">Español</span></a>
+
+			<ul class="wpml-ls-sub-menu">
+				
+					<li class="wpml-ls-slot-header_bottom_right wpml-ls-item wpml-ls-item-en wpml-ls-first-item">
+						<a href="https://#/en/recettes/pizza-dough/" class="wpml-ls-link"><span class="wpml-ls-native" lang="en">English</span></a>
+					</li>
+
+				
+					<li class="wpml-ls-slot-header_bottom_right wpml-ls-item wpml-ls-item-fr">
+						<a href="https://#/fr/recettes/pate-a-pizza/" class="wpml-ls-link"><span class="wpml-ls-native" lang="fr">Français</span></a>
+					</li>
+
+				
+					<li class="wpml-ls-slot-header_bottom_right wpml-ls-item wpml-ls-item-pt-br">
+						<a href="https://#/pt-br/recettes/massa-de-pizza/" class="wpml-ls-link"><span class="wpml-ls-native" lang="pt-br">Português</span></a>
+					</li>
+
+				
+					<li class="wpml-ls-slot-header_bottom_right wpml-ls-item wpml-ls-item-ar wpml-ls-last-item">
+						<a href="https://#/ar/recettes/%d8%b9%d8%ac%d9%8a%d9%86%d8%a9-%d8%a7%d9%84%d8%a8%d9%8a%d8%aa%d8%b2%d8%a7/" class="wpml-ls-link"><span class="wpml-ls-native" lang="ar">العربية</span></a>
+					</li>
+
+							</ul>
+
+		</li>
+
+	</ul>
+</div>
+</div></div>
+																														<div class="side_menu_button">
+																																	
+										</div>
+									</div>
+								</div>
+							
+							
+							<nav class="main_menu drop_down left">
+								<ul id="menu-main-menu-es-b2c" class=""><li id="nav-menu-item-20147" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item  narrow"><a href="https://#/es/saf-instant-en-casa/#benefits" class=""><i class="menu_icon blank fa"></i><span><span><img class="alignnone size-full wp-image-19758" src="11/target-benefits.png" />  Beneficios</span><span class="underline_dash"></span></span><span class="plus"></span></a></li>
+<li id="nav-menu-item-20159" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://#/es/saf-instant-en-casa/recetas/" class=""><i class="menu_icon blank fa"></i><span><span><img class="alignnone size-full wp-image-18966" src="10/recipes1.png" />  Recetas</span><span class="underline_dash"></span></span><span class="plus"></span></a></li>
+<li id="nav-menu-item-21564" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://#/es/los-secretos-y-los-trucos-de-saf-instant/" class=""><i class="menu_icon blank fa"></i><span><span><img class="alignnone size-full" src="10/FAQ.png" />  Trucos</span><span class="underline_dash"></span></span><span class="plus"></span></a></li>
+<li id="nav-menu-item-20149" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item  narrow"><a href="https://#/es/saf-instant-en-casa/#faq" class=""><i class="menu_icon blank fa"></i><span><span><img class="alignnone size-full wp-image-18967" src="07/FAQ-1.png" />  Preguntas frecuentes</span><span class="underline_dash"></span></span><span class="plus"></span></a></li>
+<li id="nav-menu-item-20150" class="menu-item menu-item-type-post_type menu-item-object-page anchor-item  narrow"><a href="https://#/es/saf-instant-en-casa/#contact" class=""><i class="menu_icon blank fa"></i><span><span><img class="alignnone size-full wp-image-20754" src="12/pictos-menu-contact.png" />  Contacto</span><span class="underline_dash"></span></span><span class="plus"></span></a></li>
+</ul>							</nav>
+														<nav class="mobile_menu">
+	<ul id="menu-main-menu-es-b2c-1" class=""><li id="mobile-menu-item-20147" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://#/es/saf-instant-en-casa/#benefits" class=""><span><span><img class="alignnone size-full wp-image-19758" src="11/target-benefits.png" />  Beneficios</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-20159" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://#/es/saf-instant-en-casa/recetas/" class=""><span><span><img class="alignnone size-full wp-image-18966" src="10/recipes1.png" />  Recetas</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-21564" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://#/es/los-secretos-y-los-trucos-de-saf-instant/" class=""><span><span><img class="alignnone size-full" src="10/FAQ.png" />  Trucos</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-20149" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://#/es/saf-instant-en-casa/#faq" class=""><span><span><img class="alignnone size-full wp-image-18967" src="07/FAQ-1.png" />  Preguntas frecuentes</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-20150" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://#/es/saf-instant-en-casa/#contact" class=""><span><span><img class="alignnone size-full wp-image-20754" src="12/pictos-menu-contact.png" />  Contacto</span></span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul></nav>																				</div>
+					</div>
+									</div>
+			</div>
+		</div>
+
+</header>	<a id="back_to_top" href="index.html#">
+        <span class="fa-stack">
+            <i class="qode_icon_font_awesome fa fa-level-up " ></i>        </span>
+	</a>
+	
+	
+    
+    
+    <div class="content ">
+        <div class="content_inner  ">
+    
+		<div class="title_outer title_without_animation"    data-height="191">
+		<div class="title title_size_large  position_left " style="height:191px;">
+			<div class="image not_responsive"></div>
+										<div class="title_holder"  style="padding-top:91px;height:100px;">
+					<div class="container">
+						<div class="container_inner clearfix">
+								<div class="title_subtitle_holder" >
+                                                                																		<h1  style="color:#bc0f37" ><span>Masa para pizza</span></h1>
+																	
+																												<div class="breadcrumb" > <div class="breadcrumbs"><div itemprop="breadcrumb" class="breadcrumbs_inner"><a href="https://#/es/">Página principal</a><span class="delimiter">&nbsp;>&nbsp;</span><a href="https://#/es/recettes/category/recetas/">Recetas</a> <span class="delimiter">&nbsp;>&nbsp;</span><a href="https://#/es/recettes/category/recetas/aperitivo/">Aperitivo</a> <span class="delimiter">&nbsp;>&nbsp;</span><span class="current">Masa para pizza</span></div></div></div>
+																	                                                            </div>
+						</div>
+					</div>
+				</div>
+								</div>
+			</div>
+										<div class="container">
+														<div class="container_inner default_template_holder" >
+															<div class="blog_single blog_holder">
+								<article id="post-20556" class="post-20556 post type-post status-publish format-standard has-post-thumbnail hentry category-aperitivo category-entrada category-las-especialidades category-plato category-salado">
+			<div class="post_content_holder">
+								<div class="post_text">
+					<div class="post_text_inner">
+						<h2 itemprop="name" class="entry_title"><span itemprop="dateCreated" class="date entry_date updated">15 Dic<meta itemprop="interactionCount" content="UserComments: 0"/></span> Masa para pizza</h2>
+						<div class="post_info">
+							<span class="time">Posted at 18:00h</span>
+							in <a href="https://#/es/recettes/category/recetas/aperitivo/" rel="category tag">Aperitivo</a>, <a href="https://#/es/recettes/category/recetas/entrada/" rel="category tag">Entrada</a>, <a href="https://#/es/recettes/category/recetas/las-especialidades/" rel="category tag">Las especialidades</a>, <a href="https://#/es/recettes/category/recetas/plato/" rel="category tag">Plato</a>, <a href="https://#/es/recettes/category/recetas/salado/" rel="category tag">Salado</a>							<span class="post_author">
+								by								<a itemprop="author" class="post_author_link" href="https://#/es/recettes/author/olivierovm-communication-fr/">Olivier VAN MEYEL</a>
+							</span>
+															<span class="dots"><i class="fa fa-square"></i></span><a itemprop="url" class="post_comments" href="index.html#respond" target="_self">0 Comments</a>
+							                                        <span class="dots"><i class="fa fa-square"></i></span>
+        <div class="blog_like">
+            <a  href="index.html#" class="qode-like" id="qode-like-20556" title="Like this">0<span>  Likes</span></a>        </div>
+                <span class="dots"><i class="fa fa-square"></i></span><div class="blog_share qode_share"><div class="social_share_holder"><a href="javascript:void(0)" target="_self"><span class="social_share_title">Share</span></a><div class="social_share_dropdown"><div class="inner_arrow"></div><ul><li class="facebook_share"><a href="javascript:void(0)" onclick="window.open('https://www.facebook.com/sharer.php?u=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="index.html#" onclick="popUp=window.open('https://twitter.com/share?status=Con+esta+receta+de+masa+para+pizza+f%C3%A1cil+de+hacer%2C+se+convertir%C3%A1+en+el+pizzaiolo+preferido+de+la+familia.https://#/es/recettes/masa-para-pizza/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="linkedin_share"><a href="index.html#" onclick="popUp=window.open('https://linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F&amp;title=Masa+para+pizza', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-linkedin"></i></a></li><li  class="pinterest_share"><a href="index.html#" onclick="popUp=window.open('https://pinterest.com/pin/create/button/?url=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F&amp;description=Masa para pizza&amp;media=https%3A%2F%2F#%2Fwp-content%2Fuploads%2F2020%2F11%2FPizza-dough-1.jpg', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-pinterest"></i></a></li></ul></div></div></div>    						</div>
+						<div      class="vc_row wpb_row section vc_row-fluid  noPadding grid_section" style=' text-align:left;'><div class=" section_inner clearfix"><div class='section_inner_margin clearfix'><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="630" height="380" src="11/Pizza-dough-1.jpg" class="vc_single_image-img attachment-full" alt="pizza dough recipe" loading="lazy" srcset="https://#/wp-content/uploads/2020/11/Pizza-dough-1.jpg 630w, https://#/wp-content/uploads/2020/11/Pizza-dough-1-300x181.jpg 300w" sizes="(max-width: 630px) 100vw, 630px" /></div>
+		</div>
+	</div>
+<div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+<div class="social_share_list_holder"><span>Compartir en : </span><ul><li class="facebook_share"><a title="Compartir en Facebook" href="javascript:void(0)" onclick="window.open('http://www.facebook.com/sharer.php?u=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F', 'sharer', 'toolbar=0,status=0,width=620,height=280');"><i class="fa fa-facebook"></i></a></li><li class="twitter_share"><a href="index.html#" title="Compartir en Twitter" onclick="popUp=window.open('http://twitter.com/home?status=Con+esta+receta+de+masa+para+pizza+f%C3%A1cil+de+hacer%2C+se+convertir%C3%A1+en+el+pizzaiolo+https://#/es/recettes/masa-para-pizza/', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;"><i class="fa fa-twitter"></i></a></li><li  class="linkedin_share"><a href="index.html#" class="Compartir en LinkedIn" onclick="popUp=window.open('http://linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F&amp;title=Masa+para+pizza', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-linkedin"></i></a></li><li  class="pinterest_share"><a href="index.html#" title="Compartir en Pinterest" onclick="popUp=window.open('http://pinterest.com/pin/create/button/?url=https%3A%2F%2F#%2Fes%2Frecettes%2Fmasa-para-pizza%2F&amp;description=Masa para pizza&amp;media=https%3A%2F%2F#%2Fwp-content%2Fuploads%2F2020%2F11%2FPizza-dough-1.jpg', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false"><i class="fa fa-pinterest"></i></a></li></ul></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Con esta receta de masa para pizza fácil de hacer, se convertirá en el pizzaiolo preferido de la familia.</p>
+
+		</div> 
+	</div> <div class="separator  transparent   " style="margin-top: 25px;margin-bottom: 15px;"></div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:center;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1604661309038"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="07/preparation-75x75.png" width="75" height="75" alt="preparation time" title="preparation" /></div>
+		</div>
+	</div>
+<div class="separator  transparent   " style=""></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="font-size: 14px; line-height: 16px;"><span style="color: #bc0f37;">REPOSO:</span> 1h + 30 min.</p>
+<p style="font-size: 14px; line-height: 16px;"><span style="color: #bc0f37;">TIEMPO TOTAL:</span> 1h30</p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1604661328294"><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="07/difficulty-75x75.png" width="75" height="75" alt="difficulty" title="difficulty" /></div>
+		</div>
+	</div>
+<div class="separator  transparent   " style=""></div>
+
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="font-size: 14px; line-height: 16px;"><span style="color: #bc0f37;">DIFFICULTAD</span></p>
+
+		</div> 
+	</div> <div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<div class="wpb_wrapper">
+			
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="07/easy-100x27.png" width="100" height="27" alt="easy recipe" title="easy" /></div>
+		</div>
+	</div>
+</div></div></div></div></div></div></div></div></div></div></div><div      class="vc_row wpb_row section vc_row-fluid  noPadding vc_custom_1592116865212 grid_section" style=' text-align:left;'><div class=" section_inner clearfix"><div class='section_inner_margin clearfix'><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1606227570558">
+		<div class="wpb_wrapper">
+			<p><img loading="lazy" class="alignleft size-full wp-image-19699" src="11/Whisk.png" alt="Whisk" width="40" height="45" /></p>
+<h3><span style="color: #ffffff;">INGREDIENTES</span></h3>
+<div class="separator  transparent   " style="margin-top: 10px;margin-bottom: 10px;"></div>
+
+<ul style="color: #fff;">
+<li>350 g de harina (T45 o T55)</li>
+<li>200 ml de agua</li>
+<li>30 ml de aceite de oliva</li>
+<li>6 g de sal</li>
+<li>1 bolsita de levadura seca instantánea Saf-instant 11 g</li>
+</ul>
+
+		</div> 
+	</div> 
+	<div class="wpb_single_image wpb_content_element vc_align_left">
+		<div class="wpb_wrapper">
+			
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1331" height="370" src="11/flap-1.png" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="https://#/wp-content/uploads/2020/11/flap-1.png 1331w, https://#/wp-content/uploads/2020/11/flap-1-300x83.png 300w, https://#/wp-content/uploads/2020/11/flap-1-1024x285.png 1024w, https://#/wp-content/uploads/2020/11/flap-1-768x213.png 768w, https://#/wp-content/uploads/2020/11/flap-1-700x195.png 700w" sizes="(max-width: 1331px) 100vw, 1331px" /></div>
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1603697054563">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #bc0f37; font-family: Paytone;">PRODUCTO DESTACADO</span></p>
+
+		</div> 
+	</div> <div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+
+	<div class="wpb_single_image wpb_content_element vc_align_center  qode_image_hover_zoom_in">
+		<div class="wpb_wrapper">
+			
+			<a href="https://#/es/saf-instant-en-casa/#benefits" target="_self"><div class="vc_single_image-wrapper vc_box_shadow  vc_box_border_grey"><img class="vc_single_image-img " src="07/SAF-INSTANT-11g-RED-160x222.jpg" width="160" height="222" alt="saf instant red" title="SAF-INSTANT-11g-RED" /></div></a>
+		</div>
+	</div>
+<div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1592377010513"><div class="wpb_wrapper"><div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #bc0f37; font-size: 42px; font-family: Paytone;">1</span></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>En un recipiente, mezcle la harina, la levadura y la sal. A continuación, incorpore el agua y el aceite de oliva.</p>
+
+		</div> 
+	</div> </div></div></div></div></div><div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #bc0f37; font-size: 42px; font-family: Paytone;">2</span></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Amáselo hasta obtener una masa homogénea.</p>
+
+		</div> 
+	</div> </div></div></div></div></div><div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #bc0f37; font-size: 42px; font-family: Paytone;">3</span></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Forme una bola, cúbrala con un paño húmedo y déjela reposar 1 hora aproximadamente, hasta que la masa duplique su volumen.</p>
+
+		</div> 
+	</div> </div></div></div></div></div><div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #bc0f37; font-size: 42px; font-family: Paytone;">4</span></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Extienda la masa sobre una bandeja para hornear cubierta con papel de horno y dele forma de disco o de rectángulo.</p>
+
+		</div> 
+	</div> </div></div></div></div></div><div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #bc0f37; font-size: 42px; font-family: Paytone;">5</span></p>
+
+		</div> 
+	</div> </div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>Déjela reposar 30 min a temperatura ambiente antes de cubrirla con otros ingredientes.</p>
+
+		</div> 
+	</div> </div></div></div></div></div><div class="separator  transparent   " style="margin-top: 5px;margin-bottom: 5px;"></div>
+<div      class="vc_row wpb_row section vc_row-fluid vc_inner " style=' text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1604321847497"><div class="wpb_wrapper"><div class="separator  normal   " style="margin-top: 25px;margin-bottom: 25px;background-color: #bc0f37;"></div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1606227606761">
+		<div class="wpb_wrapper">
+			<p><img loading="lazy" class="alignleft size-full wp-image-18703" src="09/Main-1.png" alt="" width="100" height="123" /></p>
+<p style="line-height: 18px;"><span style="color: #bc0f37; font-size: 22px; font-family: Paytone;">Truco</span><br />
+El agua debe estar a temperatura ambiente, no utilice agua fría o caliente.</p>
+<p style="line-height: 18px;"><span style="color: #bc0f37; font-size: 22px; font-family: Paytone;">Variante</span><br />
+Añada de 15 a 20 g de orégano seco antes de amasarla para obtener una masa deliciosamente perfumada.</p>
+
+		</div> 
+	</div> </div></div></div></div></div><div class="separator  normal   " style="margin-top: 25px;margin-bottom: 25px;background-color: #bc0f37;"></div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1604660636061">
+		<div class="wpb_wrapper">
+			<p style="line-height: 18px;"><span style="color: #bc0f37; font-size: 22px; font-family: Paytone;">También te puede interesar :</span></p>
+
+		</div> 
+	</div> <div class="separator  transparent   " style="margin-top: 10px;margin-bottom: 10px;"></div>
+<div class="qode-news-holder qode-post-carousel1 qode-nl-normal-space"  data-post-status=publish data-ignore-sticky-posts=1 data-paged=1 data-max-num-pages=4 data-next-page=2 data-title-tag=h4 data-image-size=full data-display-categories=no data-display-excerpt=no data-display-date=yes data-display-author=no data-display-share=no data-display-hot-trending-icons=no data-layout=qode_post_carousel1><div class="qode-news-list-inner-holder qode-owl-slider" data-enable-navigation="no" data-enable-pagination="no" data-number-of-items="4"><div class="qode-news-item qode-layout1-item">
+		<div class="qode-news-item-image-holder">
+			<div class="qode-post-image">
+	    <a itemprop="url" href="https://#/es/recettes/firmar-su-pan-como-un-verdadero-panadero/" title="Firmar su pan como un verdadero panadero">
+                        <img width="800" height="448" src="10/Sign-your-bread.jpg" class="attachment-full size-full wp-post-image" alt="How to sign your bred" loading="lazy" srcset="https://#/wp-content/uploads/2021/10/Sign-your-bread.jpg 800w, https://#/wp-content/uploads/2021/10/Sign-your-bread-300x168.jpg 300w, https://#/wp-content/uploads/2021/10/Sign-your-bread-768x430.jpg 768w, https://#/wp-content/uploads/2021/10/Sign-your-bread-700x392.jpg 700w, https://#/wp-content/uploads/2021/10/Sign-your-bread-539x303.jpg 539w" sizes="(max-width: 800px) 100vw, 800px" />            	    </a>
+	</div>
+        <div class="qode-news-image-info-holder-left">
+			        </div>
+        <div class="qode-news-image-info-holder-right">
+					</div>
+	</div>
+    	<div class="qode-ni-content">
+        		
+<h4 itemprop="name" class="entry-title qode-post-title">
+    <a itemprop="url" href="https://#/es/recettes/firmar-su-pan-como-un-verdadero-panadero/" title="Firmar su pan como un verdadero panadero">
+        Firmar su pan como un verdadero panadero    </a>
+</h4>					<div itemprop="dateCreated" class="qode-post-info-date entry-date published updated">
+	    	        <a itemprop="url" href="https://#/es/recettes/2021/10/">
+	            <i class="dripicons-alarm"></i>
+    	13 octubre 2021        </a>
+	    <meta itemprop="interactionCount" content="UserComments: 0"/>
+	</div>
+        	</div>
+</div><div class="qode-news-item qode-layout1-item">
+		<div class="qode-news-item-image-holder">
+			<div class="qode-post-image">
+	    <a itemprop="url" href="https://#/es/recettes/preparar-su-masa-de-pizza-en-casa/" title="Preparar su masa de pizza en casa">
+                        <img width="600" height="400" src="06/Pate-pizza.jpg" class="attachment-full size-full wp-post-image" alt="Pâte pizza maison" loading="lazy" srcset="https://#/wp-content/uploads/2021/06/Pate-pizza.jpg 600w, https://#/wp-content/uploads/2021/06/Pate-pizza-300x200.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" />            	    </a>
+	</div>
+        <div class="qode-news-image-info-holder-left">
+			        </div>
+        <div class="qode-news-image-info-holder-right">
+					</div>
+	</div>
+    	<div class="qode-ni-content">
+        		
+<h4 itemprop="name" class="entry-title qode-post-title">
+    <a itemprop="url" href="https://#/es/recettes/preparar-su-masa-de-pizza-en-casa/" title="Preparar su masa de pizza en casa">
+        Preparar su masa de pizza en casa    </a>
+</h4>					<div itemprop="dateCreated" class="qode-post-info-date entry-date published updated">
+	    	        <a itemprop="url" href="https://#/es/recettes/2021/07/">
+	            <i class="dripicons-alarm"></i>
+    	16 julio 2021        </a>
+	    <meta itemprop="interactionCount" content="UserComments: 0"/>
+	</div>
+        	</div>
+</div><div class="qode-news-item qode-layout1-item">
+		<div class="qode-news-item-image-holder">
+			<div class="qode-post-image">
+	    <a itemprop="url" href="https://#/es/recettes/las-claves-para-lograr-una-fermentacion-perfecta/" title="Las claves para lograr una fermentación perfecta">
+                        <img width="1200" height="800" src="03/PAIN.jpg" class="attachment-full size-full wp-post-image" alt="" loading="lazy" srcset="https://#/wp-content/uploads/2021/03/PAIN.jpg 1200w, https://#/wp-content/uploads/2021/03/PAIN-300x200.jpg 300w, https://#/wp-content/uploads/2021/03/PAIN-1024x683.jpg 1024w, https://#/wp-content/uploads/2021/03/PAIN-768x512.jpg 768w, https://#/wp-content/uploads/2021/03/PAIN-700x467.jpg 700w" sizes="(max-width: 1200px) 100vw, 1200px" />            	    </a>
+	</div>
+        <div class="qode-news-image-info-holder-left">
+			        </div>
+        <div class="qode-news-image-info-holder-right">
+					</div>
+	</div>
+    	<div class="qode-ni-content">
+        		
+<h4 itemprop="name" class="entry-title qode-post-title">
+    <a itemprop="url" href="https://#/es/recettes/las-claves-para-lograr-una-fermentacion-perfecta/" title="Las claves para lograr una fermentación perfecta">
+        Las claves para lograr una fermentación perfecta    </a>
+</h4>					<div itemprop="dateCreated" class="qode-post-info-date entry-date published updated">
+	    	        <a itemprop="url" href="https://#/es/recettes/2021/07/">
+	            <i class="dripicons-alarm"></i>
+    	16 julio 2021        </a>
+	    <meta itemprop="interactionCount" content="UserComments: 0"/>
+	</div>
+        	</div>
+</div><div class="qode-news-item qode-layout1-item">
+		<div class="qode-news-item-image-holder">
+			<div class="qode-post-image">
+	    <a itemprop="url" href="https://#/es/recettes/amasar-a-mano-facilmente/" title="Amasar a mano fácilmente">
+                        <img width="1000" height="562" src="03/petrissage.jpg" class="attachment-full size-full wp-post-image" alt="" loading="lazy" srcset="https://#/wp-content/uploads/2021/03/petrissage.jpg 1000w, https://#/wp-content/uploads/2021/03/petrissage-300x169.jpg 300w, https://#/wp-content/uploads/2021/03/petrissage-768x432.jpg 768w, https://#/wp-content/uploads/2021/03/petrissage-700x393.jpg 700w, https://#/wp-content/uploads/2021/03/petrissage-539x303.jpg 539w" sizes="(max-width: 1000px) 100vw, 1000px" />            	    </a>
+	</div>
+        <div class="qode-news-image-info-holder-left">
+			        </div>
+        <div class="qode-news-image-info-holder-right">
+					</div>
+	</div>
+    	<div class="qode-ni-content">
+        		
+<h4 itemprop="name" class="entry-title qode-post-title">
+    <a itemprop="url" href="https://#/es/recettes/amasar-a-mano-facilmente/" title="Amasar a mano fácilmente">
+        Amasar a mano fácilmente    </a>
+</h4>					<div itemprop="dateCreated" class="qode-post-info-date entry-date published updated">
+	    	        <a itemprop="url" href="https://#/es/recettes/2021/07/">
+	            <i class="dripicons-alarm"></i>
+    	16 julio 2021        </a>
+	    <meta itemprop="interactionCount" content="UserComments: 0"/>
+	</div>
+        	</div>
+</div><div class="qode-news-item qode-layout1-item">
+		<div class="qode-news-item-image-holder">
+			<div class="qode-post-image">
+	    <a itemprop="url" href="index.html" title="Masa para pizza">
+                        <img width="630" height="380" src="11/Pizza-dough-1.jpg" class="attachment-full size-full wp-post-image" alt="pizza dough recipe" loading="lazy" srcset="https://#/wp-content/uploads/2020/11/Pizza-dough-1.jpg 630w, https://#/wp-content/uploads/2020/11/Pizza-dough-1-300x181.jpg 300w" sizes="(max-width: 630px) 100vw, 630px" />            	    </a>
+	</div>
+        <div class="qode-news-image-info-holder-left">
+			        </div>
+        <div class="qode-news-image-info-holder-right">
+					</div>
+	</div>
+    	<div class="qode-ni-content">
+        		
+<h4 itemprop="name" class="entry-title qode-post-title">
+    <a itemprop="url" href="index.html" title="Masa para pizza">
+        Masa para pizza    </a>
+</h4>					<div itemprop="dateCreated" class="qode-post-info-date entry-date published updated">
+	    	        <a itemprop="url" href="https://#/es/recettes/2020/12/">
+	            <i class="dripicons-alarm"></i>
+    	15 diciembre 2020        </a>
+	    <meta itemprop="interactionCount" content="UserComments: 0"/>
+	</div>
+        	</div>
+</div><div class="qode-news-item qode-layout1-item">
+		<div class="qode-news-item-image-holder">
+			<div class="qode-post-image">
+	    <a itemprop="url" href="https://#/es/recettes/panecillos-de-leche/" title="Panecillos de leche">
+                        <img width="630" height="380" src="11/pain-au-lait.jpg" class="attachment-full size-full wp-post-image" alt="pain au lait buns" loading="lazy" srcset="https://#/wp-content/uploads/2020/11/pain-au-lait.jpg 630w, https://#/wp-content/uploads/2020/11/pain-au-lait-300x181.jpg 300w" sizes="(max-width: 630px) 100vw, 630px" />            	    </a>
+	</div>
+        <div class="qode-news-image-info-holder-left">
+			        </div>
+        <div class="qode-news-image-info-holder-right">
+					</div>
+	</div>
+    	<div class="qode-ni-content">
+        		
+<h4 itemprop="name" class="entry-title qode-post-title">
+    <a itemprop="url" href="https://#/es/recettes/panecillos-de-leche/" title="Panecillos de leche">
+        Panecillos de leche    </a>
+</h4>					<div itemprop="dateCreated" class="qode-post-info-date entry-date published updated">
+	    	        <a itemprop="url" href="https://#/es/recettes/2020/12/">
+	            <i class="dripicons-alarm"></i>
+    	15 diciembre 2020        </a>
+	    <meta itemprop="interactionCount" content="UserComments: 0"/>
+	</div>
+        	</div>
+</div></div></div></div></div></div></div></div></div>
+					</div>
+				</div>
+			</div>
+		
+	    	</article>													<div class="comment_holder clearfix" id="comments">
+<div class="comment_number"><div class="comment_number_inner"><h5>No Comments</h5></div></div>
+<div class="comments">
+		<!-- If comments are open, but there are no comments. -->
+
+	 
+		<!-- If comments are closed. -->
+		<p>Sorry, the comment form is closed at this time.</p>
+
+	</div></div>
+ <div class="comment_pager">
+	<p></p>
+ </div>
+ <div class="comment_form">
+	</div>						                        </div>
+
+                    					</div>
+                                 </div>
+	
+
+
+		
+	</div>
+</div>
+
+
+
+	<footer >
+		<div class="footer_inner clearfix">
+				<div class="footer_top_holder">
+            			<div class="footer_top">
+								<div class="container">
+					<div class="container_inner">
+																	<div class="two_columns_50_50 clearfix">
+								<div class="column1 footer_col1">
+									<div class="column_inner">
+										<div id="custom_html-7" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><p style="font-family: 'PaytoneOne-Regular';">
+© Saf-instant 2021&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://#/en/legal-notice/">Aviso Legal</a>&nbsp;&nbsp;•&nbsp;&nbsp;<a href="https://#/en/">Cambiar pais</a></p></div></div>									</div>
+								</div>
+								<div class="column2 footer_col2">
+									<div class="column_inner">
+										<div id="media_image-2" class="widget widget_media_image"><a href="https://www.lesaffre.com" target="_blank" rel="noopener"><img width="169" height="23" src="10/lesaffre1.png" class="image wp-image-18881  attachment-full size-full" alt="Lesaffre" loading="lazy" style="max-width: 100%; height: auto;" /></a></div>									</div>
+								</div>
+							</div>
+															</div>
+				</div>
+							</div>
+					</div>
+							<div class="footer_bottom_holder">
+                									<div class="footer_bottom">
+							</div>
+								</div>
+				</div>
+	</footer>
+		
+</div>
+</div>
+<script type="text/html" id="wpb-modifications"></script><script type='text/javascript' id='bridge-default-js-extra'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"https:\/\/#\/wp-admin\/admin-ajax.php"};
+var qodeGlobalVars = {"vars":{"qodeAddingToCartLabel":"Adding to Cart...","page_scroll_amount_for_sticky":""}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/default.min.js@ver=5.8.1' id='bridge-default-js'></script>
+<script type='text/javascript' id='bridge-default-js-after'>
+jQuery(document).ready(function() {
+	jQuery('a[href*=\\#]').each(function(){
+		jQuery(this).addClass('anchor');
+	});
+if (jQuery('.qode-title-holder.ui-state-active').length!=0) {
+jQuery('.qode-title-holder.ui-state-active .qode-tab-title-icon').click();
+jQuery('.qode-title-holder').addClass('gtm_init');
+}
+
+jQuery(document).on('click', ".qode-title-holder",function(){
+	jQuery(this).toggleClass('open');
+	if (jQuery(this).hasClass('open')){
+		var element = document.createElement('div');
+element.innerText = jQuery(this).find('.qode-tab-title-inner').text().trim();
+var sanitizedHTML = element.innerHTML;
+dataLayer.push({
+    'event': 'interaction',
+    'category': 'FAQ click',
+    'action':'open question',
+    'label':sanitizedHTML
+});
+
+
+
+	}
+
+})
+});
+</script>
+<script type='text/javascript' src='assets/js/news.min.js@ver=5.8.1' id='qode_news_script-js'></script>
+<script type='text/javascript' src='ui/core.min.js@ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='ui/accordion.min.js@ver=1.12.1' id='jquery-ui-accordion-js'></script>
+<script type='text/javascript' src='ui/menu.min.js@ver=1.12.1' id='jquery-ui-menu-js'></script>
+<script type='text/javascript' src='vendor/regenerator-runtime.min.js@ver=0.13.7' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='vendor/wp-polyfill.min.js@ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='dom-ready.min.js@ver=71883072590656bf22c74c7b887df3dd' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='hooks.min.js@ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+<script type='text/javascript' src='i18n.min.js@ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2021-09-14 11:45:58+0000","generator":"GlotPress\/3.0.0-alpha.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"Notifications":["Avisos"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script type='text/javascript' src='a11y.min.js@ver=0ac8327cc1c40dcfdf29716affd7ac63' id='wp-a11y-js'></script>
+<script type='text/javascript' id='jquery-ui-autocomplete-js-extra'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No se han encontrado resultados.","oneResult":"1 resultado encontrado. Utiliza las teclas de flecha arriba y abajo para navegar.","manyResults":"%d resultados encontrados. Utiliza las teclas arriba y abajo para navegar.","itemSelected":"Elemento seleccionado."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='ui/autocomplete.min.js@ver=1.12.1' id='jquery-ui-autocomplete-js'></script>
+<script type='text/javascript' src='ui/controlgroup.min.js@ver=1.12.1' id='jquery-ui-controlgroup-js'></script>
+<script type='text/javascript' src='ui/checkboxradio.min.js@ver=1.12.1' id='jquery-ui-checkboxradio-js'></script>
+<script type='text/javascript' src='ui/button.min.js@ver=1.12.1' id='jquery-ui-button-js'></script>
+<script type='text/javascript' src='ui/datepicker.min.js@ver=1.12.1' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Cerrar","currentText":"Hoy","monthNames":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"monthNamesShort":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"nextText":"Siguiente","prevText":"Anterior","dayNames":["domingo","lunes","martes","mi\u00e9rcoles","jueves","viernes","s\u00e1bado"],"dayNamesShort":["Dom","Lun","Mar","Mi\u00e9","Jue","Vie","S\u00e1b"],"dayNamesMin":["D","L","M","X","J","V","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='ui/mouse.min.js@ver=1.12.1' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='ui/resizable.min.js@ver=1.12.1' id='jquery-ui-resizable-js'></script>
+<script type='text/javascript' src='ui/draggable.min.js@ver=1.12.1' id='jquery-ui-draggable-js'></script>
+<script type='text/javascript' src='ui/dialog.min.js@ver=1.12.1' id='jquery-ui-dialog-js'></script>
+<script type='text/javascript' src='ui/droppable.min.js@ver=1.12.1' id='jquery-ui-droppable-js'></script>
+<script type='text/javascript' src='ui/progressbar.min.js@ver=1.12.1' id='jquery-ui-progressbar-js'></script>
+<script type='text/javascript' src='ui/selectable.min.js@ver=1.12.1' id='jquery-ui-selectable-js'></script>
+<script type='text/javascript' src='ui/sortable.min.js@ver=1.12.1' id='jquery-ui-sortable-js'></script>
+<script type='text/javascript' src='ui/slider.min.js@ver=1.12.1' id='jquery-ui-slider-js'></script>
+<script type='text/javascript' src='ui/spinner.min.js@ver=1.12.1' id='jquery-ui-spinner-js'></script>
+<script type='text/javascript' src='ui/tooltip.min.js@ver=1.12.1' id='jquery-ui-tooltip-js'></script>
+<script type='text/javascript' src='ui/tabs.min.js@ver=1.12.1' id='jquery-ui-tabs-js'></script>
+<script type='text/javascript' src='ui/effect.min.js@ver=1.12.1' id='jquery-effects-core-js'></script>
+<script type='text/javascript' src='ui/effect-blind.min.js@ver=1.12.1' id='jquery-effects-blind-js'></script>
+<script type='text/javascript' src='ui/effect-bounce.min.js@ver=1.12.1' id='jquery-effects-bounce-js'></script>
+<script type='text/javascript' src='ui/effect-clip.min.js@ver=1.12.1' id='jquery-effects-clip-js'></script>
+<script type='text/javascript' src='ui/effect-drop.min.js@ver=1.12.1' id='jquery-effects-drop-js'></script>
+<script type='text/javascript' src='ui/effect-explode.min.js@ver=1.12.1' id='jquery-effects-explode-js'></script>
+<script type='text/javascript' src='ui/effect-fade.min.js@ver=1.12.1' id='jquery-effects-fade-js'></script>
+<script type='text/javascript' src='ui/effect-fold.min.js@ver=1.12.1' id='jquery-effects-fold-js'></script>
+<script type='text/javascript' src='ui/effect-highlight.min.js@ver=1.12.1' id='jquery-effects-highlight-js'></script>
+<script type='text/javascript' src='ui/effect-pulsate.min.js@ver=1.12.1' id='jquery-effects-pulsate-js'></script>
+<script type='text/javascript' src='ui/effect-size.min.js@ver=1.12.1' id='jquery-effects-size-js'></script>
+<script type='text/javascript' src='ui/effect-scale.min.js@ver=1.12.1' id='jquery-effects-scale-js'></script>
+<script type='text/javascript' src='ui/effect-shake.min.js@ver=1.12.1' id='jquery-effects-shake-js'></script>
+<script type='text/javascript' src='ui/effect-slide.min.js@ver=1.12.1' id='jquery-effects-slide-js'></script>
+<script type='text/javascript' src='ui/effect-transfer.min.js@ver=1.12.1' id='jquery-effects-transfer-js'></script>
+<script type='text/javascript' src='js/plugins/doubletaptogo.js@ver=5.8.1' id='doubleTapToGo-js'></script>
+<script type='text/javascript' src='js/plugins/modernizr.min.js@ver=5.8.1' id='modernizr-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.appear.js@ver=5.8.1' id='appear-js'></script>
+<script type='text/javascript' src='hoverIntent.min.js@ver=1.10.1' id='hoverIntent-js'></script>
+<script type='text/javascript' src='js/plugins/counter.js@ver=5.8.1' id='counter-js'></script>
+<script type='text/javascript' src='js/plugins/easypiechart.js@ver=5.8.1' id='easyPieChart-js'></script>
+<script type='text/javascript' src='js/plugins/mixitup.js@ver=5.8.1' id='mixItUp-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.prettyPhoto.js@ver=5.8.1' id='prettyphoto-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.fitvids.js@ver=5.8.1' id='fitvids-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.flexslider-min.js@ver=5.8.1' id='flexslider-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"es","strings":{"mejs.download-file":"Descargar archivo","mejs.install-flash":"Est\u00e1s usando un navegador que no tiene Flash activo o instalado. Por favor, activa el componente del reproductor Flash o descarga la \u00faltima versi\u00f3n desde https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Pantalla completa","mejs.play":"Reproducir","mejs.pause":"Pausa","mejs.time-slider":"Control de tiempo","mejs.time-help-text":"Usa las teclas de direcci\u00f3n izquierda\/derecha para avanzar un segundo y las flechas arriba\/abajo para avanzar diez segundos.","mejs.live-broadcast":"Transmisi\u00f3n en vivo","mejs.volume-help-text":"Utiliza las teclas de flecha arriba\/abajo para aumentar o disminuir el volumen.","mejs.unmute":"Activar el sonido","mejs.mute":"Silenciar","mejs.volume-slider":"Control de volumen","mejs.video-player":"Reproductor de v\u00eddeo","mejs.audio-player":"Reproductor de audio","mejs.captions-subtitles":"Pies de foto \/ Subt\u00edtulos","mejs.captions-chapters":"Cap\u00edtulos","mejs.none":"Ninguna","mejs.afrikaans":"Afrik\u00e1ans","mejs.albanian":"Albano","mejs.arabic":"\u00c1rabe","mejs.belarusian":"Bielorruso","mejs.bulgarian":"B\u00falgaro","mejs.catalan":"Catal\u00e1n","mejs.chinese":"Chino","mejs.chinese-simplified":"Chino (Simplificado)","mejs.chinese-traditional":"Chino (Tradicional)","mejs.croatian":"Croata","mejs.czech":"Checo","mejs.danish":"Dan\u00e9s","mejs.dutch":"Neerland\u00e9s","mejs.english":"Ingl\u00e9s","mejs.estonian":"Estonio","mejs.filipino":"Filipino","mejs.finnish":"Fin\u00e9s","mejs.french":"Franc\u00e9s","mejs.galician":"Gallego","mejs.german":"Alem\u00e1n","mejs.greek":"Griego","mejs.haitian-creole":"Creole haitiano","mejs.hebrew":"Hebreo","mejs.hindi":"Indio","mejs.hungarian":"H\u00fangaro","mejs.icelandic":"Island\u00e9s","mejs.indonesian":"Indonesio","mejs.irish":"Irland\u00e9s","mejs.italian":"Italiano","mejs.japanese":"Japon\u00e9s","mejs.korean":"Coreano","mejs.latvian":"Let\u00f3n","mejs.lithuanian":"Lituano","mejs.macedonian":"Macedonio","mejs.malay":"Malayo","mejs.maltese":"Malt\u00e9s","mejs.norwegian":"Noruego","mejs.persian":"Persa","mejs.polish":"Polaco","mejs.portuguese":"Portugu\u00e9s","mejs.romanian":"Rumano","mejs.russian":"Ruso","mejs.serbian":"Serbio","mejs.slovak":"Eslovaco","mejs.slovenian":"Esloveno","mejs.spanish":"Espa\u00f1ol","mejs.swahili":"Swahili","mejs.swedish":"Sueco","mejs.tagalog":"Tagalo","mejs.thai":"Tailand\u00e9s","mejs.turkish":"Turco","mejs.ukrainian":"Ukraniano","mejs.vietnamese":"Vietnamita","mejs.welsh":"Gal\u00e9s","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='mediaelement-and-player.min.js@ver=4.2.16' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='mediaelement-migrate.min.js@ver=5.8.1' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-mediaelement.min.js@ver=5.8.1' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='js/plugins/infinitescroll.min.js@ver=5.8.1' id='infiniteScroll-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.waitforimages.js@ver=5.8.1' id='waitforimages-js'></script>
+<script type='text/javascript' src='jquery.form.min.js@ver=4.3.0' id='jquery-form-js'></script>
+<script type='text/javascript' src='js/plugins/waypoints.min.js@ver=5.8.1' id='waypoints-js'></script>
+<script type='text/javascript' src='js/plugins/jplayer.min.js@ver=5.8.1' id='jplayer-js'></script>
+<script type='text/javascript' src='js/plugins/bootstrap.carousel.js@ver=5.8.1' id='bootstrapCarousel-js'></script>
+<script type='text/javascript' src='js/plugins/skrollr.js@ver=5.8.1' id='skrollr-js'></script>
+<script type='text/javascript' src='js/plugins/Chart.min.js@ver=5.8.1' id='charts-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.easing.1.3.js@ver=5.8.1' id='easing-js'></script>
+<script type='text/javascript' src='js/plugins/abstractBaseClass.js@ver=5.8.1' id='abstractBaseClass-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.countdown.js@ver=5.8.1' id='countdown-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.multiscroll.min.js@ver=5.8.1' id='multiscroll-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.justifiedGallery.min.js@ver=5.8.1' id='justifiedGallery-js'></script>
+<script type='text/javascript' src='js/plugins/bigtext.js@ver=5.8.1' id='bigtext-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.sticky-kit.min.js@ver=5.8.1' id='stickyKit-js'></script>
+<script type='text/javascript' src='js/plugins/owl.carousel.min.js@ver=5.8.1' id='owlCarousel-js'></script>
+<script type='text/javascript' src='js/plugins/typed.js@ver=5.8.1' id='typed-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.carouFredSel-6.2.1.min.js@ver=5.8.1' id='carouFredSel-js'></script>
+<script type='text/javascript' src='js/plugins/lemmon-slider.min.js@ver=5.8.1' id='lemmonSlider-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.fullPage.min.js@ver=5.8.1' id='one_page_scroll-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.mousewheel.min.js@ver=5.8.1' id='mousewheel-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.touchSwipe.min.js@ver=5.8.1' id='touchSwipe-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.isotope.min.js@ver=5.8.1' id='isotope-js'></script>
+<script type='text/javascript' src='js/plugins/packery-mode.pkgd.min.js@ver=5.8.1' id='packery-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.stretch.js@ver=5.8.1' id='stretch-js'></script>
+<script type='text/javascript' src='js/plugins/imagesloaded.js@ver=5.8.1' id='imagesLoaded-js'></script>
+<script type='text/javascript' src='js/plugins/rangeslider.min.js@ver=5.8.1' id='rangeSlider-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.event.move.js@ver=5.8.1' id='eventMove-js'></script>
+<script type='text/javascript' src='js/plugins/jquery.twentytwenty.js@ver=5.8.1' id='twentytwenty-js'></script>
+<script type='text/javascript' src='js/plugins/swiper.min.js@ver=5.8.1' id='swiper-js'></script>
+<script type='text/javascript' src='js/default_dynamic.js@ver=1612295215' id='bridge-default-dynamic-js'></script>
+<script type='text/javascript' src='comment-reply.min.js@ver=5.8.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='assets/js/dist/js_composer_front.min.js@ver=6.7.0' id='wpb_composer_front_js-js'></script>
+<script type='text/javascript' id='qode-like-js-extra'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"https:\/\/#\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='js/plugins/qode-like.min.js@ver=5.8.1' id='qode-like-js'></script>
+<script type='text/javascript' src='modules/like/js/qode-news-like.js@ver=5.8.1' id='qode-news-like-js'></script>
+<script type='text/javascript' src='wp-embed.min.js@ver=5.8.1' id='wp-embed-js'></script>
+</body>
+</html>	
